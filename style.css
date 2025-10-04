@@ -1,0 +1,36 @@
+:root{
+  --bg:#0b0b0b;
+  --panel:#111213;
+  --muted:#dcdcdc;
+  --accent1:#ff6b6b;
+  --accent2:#7f5cff;
+  --card:#151515;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, 'Segoe UI', Roboto, system-ui, -apple-system;background:var(--bg);color:var(--muted)}
+.site-header{padding:40px 20px;text-align:center;background:linear-gradient(90deg, rgba(47,0,0,0.6), rgba(0,0,0,0.8));}
+.title{font-family: 'Cinzel', serif;letter-spacing:4px;margin:0;color:var(--accent1);font-size:2.4rem}
+.tag{opacity:0.9;margin-top:8px}
+.nav{margin-top:18px}
+.btn{display:inline-block;padding:8px 14px;margin:6px;border-radius:6px;background:linear-gradient(90deg,var(--accent1),var(--accent2));color:white;text-decoration:none}
+.cta{background:transparent;border:2px solid rgba(255,255,255,0.06)}
+.hero{display:flex;gap:2rem;align-items:center;justify-content:space-between;padding:40px;max-width:1100px;margin:20px auto}
+.hero-left{flex:1}
+.hero-right{width:320px}
+.reader-shell{max-width:900px;margin:24px auto;padding:10px}
+.mini-header{display:flex;justify-content:space-between;align-items:center;padding:10px 0}
+.chap-list ul{list-style:none;padding:0;margin:0}
+.chap-list li{padding:10px 0;border-bottom:1px dashed rgba(255,255,255,0.03)}
+.coming{color:var(--accent1);font-weight:700}
+.chapter{background:var(--card);padding:28px;border-radius:10px;box-shadow:0 8px 30px rgba(0,0,0,0.6)}
+.chapter p{margin:14px 0;font-size:18px;line-height:1.85}
+.nav-chapter{display:flex;justify-content:space-between;margin-top:20px}
+.foot{opacity:0.8;text-align:center;padding:18px}
+.small{font-size:14px}
+/* mascot */
+#mascot-wrap{position:fixed;left:18px;bottom:18px;width:110px;height:110px;z-index:999}
+#mascot{width:100%;height:100%;cursor:pointer;display:block}
+#audio-control{position:fixed;right:18px;bottom:18px;background:rgba(0,0,0,0.45);padding:8px;border-radius:12px;color:var(--muted);z-index:999}
+.audio-btn{background:linear-gradient(90deg,var(--accent1),var(--accent2));border:none;padding:8px 12px;border-radius:8px;color:white;cursor:pointer}
+/* small responsive */
+@media(max-width:700px){.hero{flex-direction:column}.reader-shell{padding:6px}.chapter p{font-size:16px}}
